@@ -7,13 +7,13 @@ JOBS= [
    'id':1,
    'title':'Data Analyst',
    'location':'Guadalajara, Mexico',
-   'salary':'Rs. 10,00,000'
+   'salary':'$. 10,00,000'
  },
   {
     'id':2,
    'title':'Data Scientist',
    'location':'CDMX, Mexico',
-   'salary':'Rs. 15,00,000'
+   'salary':'$. 15,00,000'
   },
   {
     'id':3,
