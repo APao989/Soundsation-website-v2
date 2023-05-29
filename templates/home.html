@@ -1,9 +1,60 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Jovian Careers</title>
+    <title>Soundsation</title> 
+    <style>
+      h1{
+        font-size:40px;
+        font-family:Roboto;
+        font: weight normal;
+        color: rgb(58,50,50);
+        text-align: center;
+      }
+
+      #banner {
+        width: 100%;
+        height: 360px;
+        object-fit: cover;
+      }
+
+      h2 {
+        font-family: Roboto;
+        font-size: 32px;
+        color: rgb(100,100,100);
+        text-align: center;
+        font-weight: normal;
+      }
+
+      .bodytext {
+        font-family: Roboto;
+        color: rgb(80, 80, 80)
+      }
+
+      #container {
+        max-width: 720px;
+        margin: 0 auto;}
+    
+    </style>
   </head>
   <body>
-    Hello there, you'll learn about the job openings at Jovian here.
+    <div id="container">
+    <h1>Soundsation Music Store</h1>
+    <img id="banner" src="https://ae2website-1.mabelmanzano.repl.co/static/banner.jpg">
+    <h2> About Soundsation</h2>
+    <p class="bodytext">
+    <p>In our store you will find records, vinyls, and everything you want from your favorite artists, especially the best of 2022.</p>
+    <h2>Open Positions</h2>
+    <p class="bodytext">
+    <div>
+      {% for job in jobs %}
+       {% include 'jobitem.html' %}
+       {% endfor %}
+    </div>
+    </p>
+    <div style="text-align:center;">
+    <button id>Contact Us</button>
+      <p>Copyright 2023, Soundsation</p>
+    </div>
+  </div>
   </body>
 </html>
